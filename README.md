@@ -163,7 +163,9 @@ jupyter notebook analysis.ipynb
 
 **Rashad**
 
-- GitHub: [@Rashad1019](https://github.com/Rashad1019)
+- 📧 Email: [Rashad19@outlook.com](mailto:Rashad19@outlook.com)
+- 🐙 GitHub: [@Rashad1019](https://github.com/Rashad1019)
+- 🌐 **Live Demo:** [https://rashad1019.github.io/carbon_emissions](https://rashad1019.github.io/carbon_emissions)
 
 ---
 
