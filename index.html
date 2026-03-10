@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -56,7 +56,7 @@
     <nav class="fixed w-full z-50 px-6 py-4 bg-obsidian-bg/80 backdrop-blur-md border-b border-obsidian-border">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <i data-lucide="globe" class="text-obsidian-accent w-6 h-6"></i>
+                <i class="fas fa-globe text-obsidian-accent text-xl"></i>
                 <span class="font-extrabold text-xl tracking-tight text-white uppercase">Climate<span class="text-obsidian-accent">Data</span></span>
             </div>
             <div class="hidden md:flex items-center gap-8 font-medium text-sm">
@@ -64,7 +64,7 @@
                 <a href="#visuals" class="hover:text-obsidian-accent transition-colors">Visualizations</a>
                 <a href="#scenarios" class="hover:text-obsidian-accent transition-colors">Scenarios</a>
                 <a href="https://github.com/Rashad1019/carbon_emissions" class="flex items-center gap-2 px-4 py-2 rounded-full border border-obsidian-border hover:bg-obsidian-card transition-all">
-                    <i data-lucide="github" class="w-4 h-4"></i> Repository
+                    <i class="fab fa-github"></i> Repository
                 </a>
             </div>
         </div>
@@ -97,7 +97,7 @@
                 <!-- Correlation Card -->
                 <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i data-lucide="trending-up" class="w-20 h-20"></i>
+                        <i class="fas fa-chart-line" style="font-size:5rem"></i>
                     </div>
                     <p class="text-obsidian-muted font-bold text-sm uppercase tracking-widest mb-2">Correlation</p>
                     <h3 class="text-5xl font-extrabold text-white mb-4 tracking-tighter">95.5%</h3>
@@ -106,7 +106,7 @@
                 <!-- R-Squared Card -->
                 <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i data-lucide="calculator" class="w-20 h-20"></i>
+                        <i class="fas fa-calculator" style="font-size:5rem"></i>
                     </div>
                     <p class="text-obsidian-muted font-bold text-sm uppercase tracking-widest mb-2">R-Squared</p>
                     <h3 class="text-5xl font-extrabold text-white mb-4 tracking-tighter">0.912</h3>
@@ -115,7 +115,7 @@
                 <!-- CO2 Increase -->
                 <div class="glass-card p-8 rounded-3xl relative overflow-hidden group text-obsidian-accent">
                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i data-lucide="flame" class="w-20 h-20"></i>
+                        <i class="fas fa-fire" style="font-size:5rem"></i>
                     </div>
                     <p class="text-obsidian-muted font-bold text-sm uppercase tracking-widest mb-2">CO₂ Growth</p>
                     <h3 class="text-5xl font-extrabold text-white mb-4 tracking-tighter">+31.8%</h3>
@@ -124,7 +124,7 @@
                 <!-- Temperature Card -->
                 <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <i data-lucide="thermometer" class="w-20 h-20"></i>
+                        <i class="fas fa-thermometer-half" style="font-size:5rem"></i>
                     </div>
                     <p class="text-obsidian-muted font-bold text-sm uppercase tracking-widest mb-2">Warming</p>
                     <h3 class="text-5xl font-extrabold text-white mb-4 tracking-tighter">+2.20°F</h3>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="mt-10 p-6 rounded-2xl border border-obsidian-border bg-obsidian-card/50 flex gap-4">
                     <div class="p-3 rounded-xl bg-obsidian-accent/10 text-obsidian-accent shrink-0">
-                        <i data-lucide="database"></i>
+                        <i class="fas fa-database text-lg"></i>
                     </div>
                     <div>
                         <h4 class="font-bold text-white mb-1">Source Datasets</h4>
@@ -233,7 +233,7 @@
                             <p class="text-xs text-obsidian-muted font-bold uppercase tracking-widest">Time Series (1961 - 2022)</p>
                         </div>
                         <div class="p-2 rounded-lg bg-obsidian-card">
-                            <i data-lucide="line-chart" class="text-obsidian-muted w-5 h-5"></i>
+                            <i class="fas fa-chart-line text-obsidian-muted"></i>
                         </div>
                     </div>
                     <div class="h-[400px]">
@@ -249,7 +249,7 @@
                             <p class="text-xs text-obsidian-muted font-bold uppercase tracking-widest">Scatter Analysis (PPM to Δ°F)</p>
                         </div>
                         <div class="p-2 rounded-lg bg-obsidian-card">
-                            <i data-lucide="bar-chart-2" class="text-obsidian-muted w-5 h-5"></i>
+                            <i class="fas fa-chart-bar text-obsidian-muted"></i>
                         </div>
                     </div>
                     <div class="h-[400px]">
@@ -294,11 +294,11 @@
     <footer class="py-12 px-6 border-t border-obsidian-border bg-obsidian-card">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-sm">
             <div class="flex items-center gap-2">
-                <i data-lucide="globe" class="text-obsidian-accent w-5 h-5"></i>
+                <i class="fas fa-globe text-obsidian-accent"></i>
                 <span class="font-bold text-white">Rashad · Data Science Analysis</span>
             </div>
             <div class="flex gap-8 text-obsidian-muted font-bold uppercase tracking-widest">
-                <a href="/cdn-cgi/l/email-protection#6c3e0d1f040d085d552c03191800030307420f0301" class="hover:text-obsidian-accent transition-colors">Contact</a>
+                <a href="mailto:Rashad19@outlook.com" class="hover:text-obsidian-accent transition-colors">Contact</a>
                 <a href="https://github.com/Rashad1019" class="hover:text-obsidian-accent transition-colors">GitHub</a>
                 <a href="#" class="hover:text-obsidian-accent transition-colors">MIT License</a>
             </div>
@@ -308,16 +308,13 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
+    <script>
         // Data for charts
-        const climateData = [{"year": 1961, "co2": 317.64, "temp": 0.211}, {"year": 1962, "co2": 318.45, "temp": 0.038}, {"year": 1963, "co2": 318.99, "temp": 0.168}, {"year": 1964, "co2": 319.62, "temp": -0.246}, {"year": 1965, "co2": 320.04, "temp": -0.223}, {"year": 1966, "co2": 321.37, "temp": 0.201}, {"year": 1967, "co2": 322.18, "temp": -0.117}, {"year": 1968, "co2": 323.05, "temp": -0.126}, {"year": 1969, "co2": 324.62, "temp": -0.092}, {"year": 1970, "co2": 325.68, "temp": 0.15}, {"year": 1971, "co2": 326.32, "temp": -0.093}, {"year": 1972, "co2": 327.46, "temp": -0.199}, {"year": 1973, "co2": 329.68, "temp": 0.269}, {"year": 1974, "co2": 330.19, "temp": -0.181}, {"year": 1975, "co2": 331.13, "temp": 0.088}, {"year": 1976, "co2": 332.03, "temp": -0.314}, {"year": 1977, "co2": 333.84, "temp": 0.269}, {"year": 1978, "co2": 335.42, "temp": 0.001}, {"year": 1979, "co2": 336.83, "temp": 0.226}, {"year": 1980, "co2": 338.76, "temp": 0.332}, {"year": 1981, "co2": 340.12, "temp": 0.443}, {"year": 1982, "co2": 341.48, "temp": 0.086}, {"year": 1983, "co2": 343.15, "temp": 0.46}, {"year": 1984, "co2": 344.87, "temp": 0.127}, {"year": 1985, "co2": 346.35, "temp": -0.031}, {"year": 1986, "co2": 347.61, "temp": 0.242}, {"year": 1987, "co2": 349.31, "temp": 0.403}, {"year": 1988, "co2": 351.69, "temp": 0.558}, {"year": 1989, "co2": 353.2, "temp": 0.331}, {"year": 1990, "co2": 354.45, "temp": 0.639}, {"year": 1991, "co2": 355.7, "temp": 0.468}, {"year": 1992, "co2": 356.55, "temp": 0.184}, {"year": 1993, "co2": 357.21, "temp": 0.348}, {"year": 1994, "co2": 358.96, "temp": 0.507}, {"year": 1995, "co2": 360.97, "temp": 0.835}, {"year": 1996, "co2": 362.74, "temp": 0.355}, {"year": 1997, "co2": 363.88, "temp": 0.656}, {"year": 1998, "co2": 366.84, "temp": 0.993}, {"year": 1999, "co2": 368.54, "temp": 0.783}, {"year": 2000, "co2": 369.71, "temp": 0.728}, {"year": 2001, "co2": 371.32, "temp": 0.834}, {"year": 2002, "co2": 373.45, "temp": 1.021}, {"year": 2003, "co2": 375.98, "temp": 0.893}, {"year": 2004, "co2": 377.7, "temp": 0.913}, {"year": 2005, "co2": 379.98, "temp": 1.095}, {"year": 2006, "co2": 382.09, "temp": 0.998}, {"year": 2007, "co2": 384.03, "temp": 1.195}, {"year": 2008, "co2": 385.83, "temp": 0.935}, {"year": 2009, "co2": 387.64, "temp": 0.957}, {"year": 2010, "co2": 390.1, "temp": 1.219}, {"year": 2011, "co2": 391.85, "temp": 0.921}, {"year": 2012, "co2": 394.06, "temp": 1.074}, {"year": 2013, "co2": 396.74, "temp": 1.016}, {"year": 2014, "co2": 398.81, "temp": 1.053}, {"year": 2015, "co2": 401.01, "temp": 1.412}, {"year": 2016, "co2": 404.41, "temp": 1.66}, {"year": 2017, "co2": 406.76, "temp": 1.429}, {"year": 2018, "co2": 408.71, "temp": 1.29}, {"year": 2019, "co2": 411.65, "temp": 1.444}, {"year": 2020, "co2": 414.21, "temp": 1.711}, {"year": 2021, "co2": 416.41, "temp": 1.447}, {"year": 2022, "co2": 418.53, "temp": 1.394}];
+        var climateData = [{"year": 1961, "co2": 317.64, "temp": 0.211}, {"year": 1962, "co2": 318.45, "temp": 0.038}, {"year": 1963, "co2": 318.99, "temp": 0.168}, {"year": 1964, "co2": 319.62, "temp": -0.246}, {"year": 1965, "co2": 320.04, "temp": -0.223}, {"year": 1966, "co2": 321.37, "temp": 0.201}, {"year": 1967, "co2": 322.18, "temp": -0.117}, {"year": 1968, "co2": 323.05, "temp": -0.126}, {"year": 1969, "co2": 324.62, "temp": -0.092}, {"year": 1970, "co2": 325.68, "temp": 0.15}, {"year": 1971, "co2": 326.32, "temp": -0.093}, {"year": 1972, "co2": 327.46, "temp": -0.199}, {"year": 1973, "co2": 329.68, "temp": 0.269}, {"year": 1974, "co2": 330.19, "temp": -0.181}, {"year": 1975, "co2": 331.13, "temp": 0.088}, {"year": 1976, "co2": 332.03, "temp": -0.314}, {"year": 1977, "co2": 333.84, "temp": 0.269}, {"year": 1978, "co2": 335.42, "temp": 0.001}, {"year": 1979, "co2": 336.83, "temp": 0.226}, {"year": 1980, "co2": 338.76, "temp": 0.332}, {"year": 1981, "co2": 340.12, "temp": 0.443}, {"year": 1982, "co2": 341.48, "temp": 0.086}, {"year": 1983, "co2": 343.15, "temp": 0.46}, {"year": 1984, "co2": 344.87, "temp": 0.127}, {"year": 1985, "co2": 346.35, "temp": -0.031}, {"year": 1986, "co2": 347.61, "temp": 0.242}, {"year": 1987, "co2": 349.31, "temp": 0.403}, {"year": 1988, "co2": 351.69, "temp": 0.558}, {"year": 1989, "co2": 353.2, "temp": 0.331}, {"year": 1990, "co2": 354.45, "temp": 0.639}, {"year": 1991, "co2": 355.7, "temp": 0.468}, {"year": 1992, "co2": 356.55, "temp": 0.184}, {"year": 1993, "co2": 357.21, "temp": 0.348}, {"year": 1994, "co2": 358.96, "temp": 0.507}, {"year": 1995, "co2": 360.97, "temp": 0.835}, {"year": 1996, "co2": 362.74, "temp": 0.355}, {"year": 1997, "co2": 363.88, "temp": 0.656}, {"year": 1998, "co2": 366.84, "temp": 0.993}, {"year": 1999, "co2": 368.54, "temp": 0.783}, {"year": 2000, "co2": 369.71, "temp": 0.728}, {"year": 2001, "co2": 371.32, "temp": 0.834}, {"year": 2002, "co2": 373.45, "temp": 1.021}, {"year": 2003, "co2": 375.98, "temp": 0.893}, {"year": 2004, "co2": 377.7, "temp": 0.913}, {"year": 2005, "co2": 379.98, "temp": 1.095}, {"year": 2006, "co2": 382.09, "temp": 0.998}, {"year": 2007, "co2": 384.03, "temp": 1.195}, {"year": 2008, "co2": 385.83, "temp": 0.935}, {"year": 2009, "co2": 387.64, "temp": 0.957}, {"year": 2010, "co2": 390.1, "temp": 1.219}, {"year": 2011, "co2": 391.85, "temp": 0.921}, {"year": 2012, "co2": 394.06, "temp": 1.074}, {"year": 2013, "co2": 396.74, "temp": 1.016}, {"year": 2014, "co2": 398.81, "temp": 1.053}, {"year": 2015, "co2": 401.01, "temp": 1.412}, {"year": 2016, "co2": 404.41, "temp": 1.66}, {"year": 2017, "co2": 406.76, "temp": 1.429}, {"year": 2018, "co2": 408.71, "temp": 1.29}, {"year": 2019, "co2": 411.65, "temp": 1.444}, {"year": 2020, "co2": 414.21, "temp": 1.711}, {"year": 2021, "co2": 416.41, "temp": 1.447}, {"year": 2022, "co2": 418.53, "temp": 1.394}];
 
-        const years = climateData.map(d => d.year);
-        const co2 = climateData.map(d => d.co2);
-        const temp = climateData.map(d => +(d.temp * 1.8).toFixed(3));
+        var years = climateData.map(function(d) { return d.year; });
+        var co2 = climateData.map(function(d) { return d.co2; });
+        var temp = climateData.map(function(d) { return +(d.temp * 1.8).toFixed(3); });
 
         // Chart.js Default Config
         Chart.defaults.color = '#5E4D3D';
@@ -343,7 +340,7 @@
                         pointHoverRadius: 6
                     },
                     {
-                        label: 'Temp Anomaly (°F)',
+                        label: 'Temp Anomaly (\u00B0F)',
                         data: temp,
                         borderColor: '#D9C0A7',
                         borderWidth: 2,
@@ -373,7 +370,7 @@
                         type: 'linear',
                         position: 'right',
                         grid: { display: false },
-                        title: { display: true, text: 'Temp Anomaly (°F)', color: '#D9C0A7' }
+                        title: { display: true, text: 'Temp Anomaly (\u00B0F)', color: '#D9C0A7' }
                     }
                 }
             }
@@ -385,7 +382,7 @@
             data: {
                 datasets: [{
                     label: 'Correlation',
-                    data: climateData.map(d => ({ x: d.co2, y: +(d.temp * 1.8).toFixed(3) })),
+                    data: climateData.map(function(d) { return { x: d.co2, y: +(d.temp * 1.8).toFixed(3) }; }),
                     backgroundColor: '#A4503D',
                     pointRadius: 4,
                     pointHoverRadius: 8
@@ -398,7 +395,7 @@
                     legend: { display: false },
                     tooltip: {
                         callbacks: {
-                            label: (ctx) => `CO2: ${ctx.raw.x}ppm, Temp: ${ctx.raw.y}°F`
+                            label: function(ctx) { return 'CO2: ' + ctx.raw.x + 'ppm, Temp: ' + ctx.raw.y + '\u00B0F'; }
                         }
                     }
                 },
@@ -409,3 +406,11 @@
                     },
                     y: {
                         grid: { color: '#2A2726' },
+                        title: { display: true, text: 'Temp Anomaly (\u00B0F)' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
