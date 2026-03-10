@@ -39,8 +39,8 @@ Over the 61-year study period:
 
 Our decade-by-decade analysis shows that both CO₂ levels and temperatures have increased faster in recent decades compared to earlier ones:
 
-- **1960s average temperature anomaly:** Near 32°F (0°F anomaly)
-- **2020s average temperature anomaly:** Over 2.1°F
+- **1960s average temperature anomaly:** Near 0°F
+- **2020s average temperature anomaly:** Over 1.2°F
 
 The rate of change isn't just continuing—it's speeding up.
 
