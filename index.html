@@ -67,6 +67,19 @@
                     <i data-lucide="github" class="w-4 h-4"></i> Repository
                 </a>
             </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white p-2">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-obsidian-bg/95 border-b border-obsidian-border absolute left-0 w-full px-6 py-8 space-y-4">
+            <a href="#analysis" class="block text-lg font-medium hover:text-obsidian-accent">Analysis</a>
+            <a href="#visuals" class="block text-lg font-medium hover:text-obsidian-accent">Visualizations</a>
+            <a href="#scenarios" class="block text-lg font-medium hover:text-obsidian-accent">Scenarios</a>
+            <a href="https://github.com/Rashad1019/carbon_emissions" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-obsidian-border text-sm">
+                <i data-lucide="github" class="w-4 h-4"></i> Repository
+            </a>
         </div>
     </nav>
 
@@ -80,7 +93,7 @@
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-obsidian-accent opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-obsidian-accent"></span>
                     </span>
-                    Data Science Portfolio
+                    Data Science done by Rashad
                 </div>
                 <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-[1.1] mb-8 tracking-tighter">
                     Quantifying the <span class="text-obsidian-accent italic">Causal Link</span> of Global Warming.
@@ -302,7 +315,7 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-sm">
             <div class="flex items-center gap-2">
                 <i data-lucide="globe" class="text-obsidian-accent w-5 h-5"></i>
-                <span class="font-bold text-white">Rashad · Data Science Analysis</span>
+                <span class="font-bold text-white">Data Science done by Rashad</span>
             </div>
             <div class="flex gap-8 text-obsidian-muted font-bold uppercase tracking-widest">
                 <a href="mailto:Rashad19@outlook.com" class="hover:text-obsidian-accent transition-colors">Contact</a>
@@ -316,23 +329,39 @@
     </footer>
 
     <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide Icons
+            lucide.createIcons();
 
-        // Data for charts
-        const climateData = [{"year": 1961, "co2": 317.64, "temp": 0.38}, {"year": 1962, "co2": 318.45, "temp": 0.068}, {"year": 1963, "co2": 318.99, "temp": 0.302}, {"year": 1964, "co2": 319.62, "temp": -0.443}, {"year": 1965, "co2": 320.04, "temp": -0.401}, {"year": 1966, "co2": 321.37, "temp": 0.362}, {"year": 1967, "co2": 322.18, "temp": -0.211}, {"year": 1968, "co2": 323.05, "temp": -0.227}, {"year": 1969, "co2": 324.62, "temp": -0.166}, {"year": 1970, "co2": 325.68, "temp": 0.27}, {"year": 1971, "co2": 326.32, "temp": -0.167}, {"year": 1972, "co2": 327.46, "temp": -0.358}, {"year": 1973, "co2": 329.68, "temp": 0.484}, {"year": 1974, "co2": 330.19, "temp": -0.326}, {"year": 1975, "co2": 331.13, "temp": 0.158}, {"year": 1976, "co2": 332.03, "temp": -0.565}, {"year": 1977, "co2": 333.84, "temp": 0.484}, {"year": 1978, "co2": 335.42, "temp": 0.002}, {"year": 1979, "co2": 336.83, "temp": 0.407}, {"year": 1980, "co2": 338.76, "temp": 0.598}, {"year": 1981, "co2": 340.12, "temp": 0.797}, {"year": 1982, "co2": 341.48, "temp": 0.155}, {"year": 1983, "co2": 343.15, "temp": 0.828}, {"year": 1984, "co2": 344.87, "temp": 0.229}, {"year": 1985, "co2": 346.35, "temp": -0.056}, {"year": 1986, "co2": 347.61, "temp": 0.436}, {"year": 1987, "co2": 349.31, "temp": 0.725}, {"year": 1988, "co2": 351.69, "temp": 1.004}, {"year": 1989, "co2": 353.2, "temp": 0.596}, {"year": 1990, "co2": 354.45, "temp": 1.15}, {"year": 1991, "co2": 355.7, "temp": 0.842}, {"year": 1992, "co2": 356.55, "temp": 0.331}, {"year": 1993, "co2": 357.21, "temp": 0.626}, {"year": 1994, "co2": 358.96, "temp": 0.913}, {"year": 1995, "co2": 360.97, "temp": 1.503}, {"year": 1996, "co2": 362.74, "temp": 0.639}, {"year": 1997, "co2": 363.88, "temp": 1.181}, {"year": 1998, "co2": 366.84, "temp": 1.787}, {"year": 1999, "co2": 368.54, "temp": 1.409}, {"year": 2000, "co2": 369.71, "temp": 1.31}, {"year": 2001, "co2": 371.32, "temp": 1.501}, {"year": 2002, "co2": 373.45, "temp": 1.838}, {"year": 2003, "co2": 375.98, "temp": 1.607}, {"year": 2004, "co2": 377.7, "temp": 1.643}, {"year": 2005, "co2": 379.98, "temp": 1.971}, {"year": 2006, "co2": 382.09, "temp": 1.796}, {"year": 2007, "co2": 384.03, "temp": 2.151}, {"year": 2008, "co2": 385.83, "temp": 1.683}, {"year": 2009, "co2": 387.64, "temp": 1.723}, {"year": 2010, "co2": 390.1, "temp": 2.194}, {"year": 2011, "co2": 391.85, "temp": 1.658}, {"year": 2012, "co2": 394.06, "temp": 1.933}, {"year": 2013, "co2": 396.74, "temp": 1.829}, {"year": 2014, "co2": 398.81, "temp": 1.895}, {"year": 2015, "co2": 401.01, "temp": 2.542}, {"year": 2016, "co2": 404.41, "temp": 2.988}, {"year": 2017, "co2": 406.76, "temp": 2.572}, {"year": 2018, "co2": 408.71, "temp": 2.322}, {"year": 2019, "co2": 411.65, "temp": 2.599}, {"year": 2020, "co2": 414.21, "temp": 3.08}, {"year": 2021, "co2": 416.41, "temp": 2.605}, {"year": 2022, "co2": 418.53, "temp": 2.509}];
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                // Close menu when clicking a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+                });
+            }
 
-        const years = climateData.map(d => d.year);
-        const co2 = climateData.map(d => d.co2);
-        const temp = climateData.map(d => d.temp);
+            // Data for charts
+            const climateData = [{"year": 1961, "co2": 317.64, "temp": 0.38}, {"year": 1962, "co2": 318.45, "temp": 0.068}, {"year": 1963, "co2": 318.99, "temp": 0.302}, {"year": 1964, "co2": 319.62, "temp": -0.443}, {"year": 1965, "co2": 320.04, "temp": -0.401}, {"year": 1966, "co2": 321.37, "temp": 0.362}, {"year": 1967, "co2": 322.18, "temp": -0.211}, {"year": 1968, "co2": 323.05, "temp": -0.227}, {"year": 1969, "co2": 324.62, "temp": -0.166}, {"year": 1970, "co2": 325.68, "temp": 0.27}, {"year": 1971, "co2": 326.32, "temp": -0.167}, {"year": 1972, "co2": 327.46, "temp": -0.358}, {"year": 1973, "co2": 329.68, "temp": 0.484}, {"year": 1974, "co2": 330.19, "temp": -0.326}, {"year": 1975, "co2": 331.13, "temp": 0.158}, {"year": 1976, "co2": 332.03, "temp": -0.565}, {"year": 1977, "co2": 333.84, "temp": 0.484}, {"year": 1978, "co2": 335.42, "temp": 0.002}, {"year": 1979, "co2": 336.83, "temp": 0.407}, {"year": 1980, "co2": 338.76, "temp": 0.598}, {"year": 1981, "co2": 340.12, "temp": 0.797}, {"year": 1982, "co2": 341.48, "temp": 0.155}, {"year": 1983, "co2": 343.15, "temp": 0.828}, {"year": 1984, "co2": 344.87, "temp": 0.229}, {"year": 1985, "co2": 346.35, "temp": -0.056}, {"year": 1986, "co2": 347.61, "temp": 0.436}, {"year": 1987, "co2": 349.31, "temp": 0.725}, {"year": 1988, "co2": 351.69, "temp": 1.004}, {"year": 1989, "co2": 353.2, "temp": 0.596}, {"year": 1990, "co2": 354.45, "temp": 1.15}, {"year": 1991, "co2": 355.7, "temp": 0.842}, {"year": 1992, "co2": 356.55, "temp": 0.331}, {"year": 1993, "co2": 357.21, "temp": 0.626}, {"year": 1994, "co2": 358.96, "temp": 0.913}, {"year": 1995, "co2": 360.97, "temp": 1.503}, {"year": 1996, "co2": 362.74, "temp": 0.639}, {"year": 1997, "co2": 363.88, "temp": 1.181}, {"year": 1998, "co2": 366.84, "temp": 1.787}, {"year": 1999, "co2": 368.54, "temp": 1.409}, {"year": 2000, "co2": 369.71, "temp": 1.31}, {"year": 2001, "co2": 371.32, "temp": 1.501}, {"year": 2002, "co2": 373.45, "temp": 1.838}, {"year": 2003, "co2": 375.98, "temp": 1.607}, {"year": 2004, "co2": 377.7, "temp": 1.643}, {"year": 2005, "co2": 379.98, "temp": 1.971}, {"year": 2006, "co2": 382.09, "temp": 1.796}, {"year": 2007, "co2": 384.03, "temp": 2.151}, {"year": 2008, "co2": 385.83, "temp": 1.683}, {"year": 2009, "co2": 387.64, "temp": 1.723}, {"year": 2010, "co2": 390.1, "temp": 2.194}, {"year": 2011, "co2": 391.85, "temp": 1.658}, {"year": 2012, "co2": 394.06, "temp": 1.933}, {"year": 2013, "co2": 396.74, "temp": 1.829}, {"year": 2014, "co2": 398.81, "temp": 1.895}, {"year": 2015, "co2": 401.01, "temp": 2.542}, {"year": 2016, "co2": 404.41, "temp": 2.988}, {"year": 2017, "co2": 406.76, "temp": 2.572}, {"year": 2018, "co2": 408.71, "temp": 2.322}, {"year": 2019, "co2": 411.65, "temp": 2.599}, {"year": 2020, "co2": 414.21, "temp": 3.08}, {"year": 2021, "co2": 416.41, "temp": 2.605}, {"year": 2022, "co2": 418.53, "temp": 2.509}];
 
-        // Chart.js Default Config
-        Chart.defaults.color = '#5E4D3D';
-        Chart.defaults.font.family = '"Plus Jakarta Sans"';
-        Chart.defaults.font.weight = '600';
+            const years = climateData.map(d => d.year);
+            const co2 = climateData.map(d => d.co2);
+            const temp = climateData.map(d => d.temp);
 
-        // Time Series Chart
-        new Chart(document.getElementById('timeSeriesChart'), {
+            // Chart.js Default Config
+            const isMobile = window.innerWidth < 768;
+            Chart.defaults.color = '#9CA3AF';
+            Chart.defaults.font.family = '"Plus Jakarta Sans"';
+            Chart.defaults.font.weight = '600';
+            Chart.defaults.font.size = isMobile ? 10 : 12;
+
+            // Time Series Chart
+            new Chart(document.getElementById('timeSeriesChart'), {
             type: 'line',
             data: {
                 labels: years,
@@ -374,13 +403,13 @@
                         type: 'linear',
                         position: 'left',
                         grid: { color: '#2A2726' },
-                        title: { display: true, text: 'CO2 Concentration (PPM)', color: '#A4503D' }
+                        title: { display: !isMobile, text: 'CO2 (PPM)', color: '#A4503D' }
                     },
                     yTemp: {
                         type: 'linear',
                         position: 'right',
                         grid: { display: false },
-                        title: { display: true, text: 'Temp Anomaly (°F)', color: '#D9C0A7' }
+                        title: { display: !isMobile, text: 'Temp (°F)', color: '#D9C0A7' }
                     }
                 }
             }
@@ -421,6 +450,7 @@
                 }
             }
         });
+    });
     </script>
 </body>
 </html>
