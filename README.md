@@ -36,14 +36,14 @@ Understanding the quantitative relationship between carbon emissions and tempera
 | Pearson Correlation | **0.955** |
 | R-squared | **0.912** |
 | CO₂ Increase (1961-2022) | **100.88 ppm** (+31.8%) |
-| Temperature Rise | **1.22°C** |
-| Warming Rate | **0.02°C/year** |
+| Temperature Rise | **2.20°F** |
+| Warming Rate | **0.04°F/year** |
 
 ### What-If Scenario Predictions
 
 Based on the regression model, reducing global CO₂ by:
-- **10%** → Could lower temperature anomaly to **0.79°C**
-- **20%** → Could lower temperature anomaly to **0.12°C**
+- **10%** → Could lower temperature anomaly to **1.42°F**
+- **20%** → Could lower temperature anomaly to **0.22°F**
 
 ---
 
@@ -145,7 +145,7 @@ jupyter notebook analysis.ipynb
 2. **Temperature Anomaly Data**
    - Source: Country-level temperature deviations
    - Coverage: 225 countries/regions, 1961-2022
-   - Unit: Degrees Celsius (°C) deviation from baseline
+   - Unit: Degrees Fahrenheit (°F) deviation from baseline
 
 ---
 

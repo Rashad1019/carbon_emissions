@@ -29,18 +29,18 @@ Over the 61-year study period:
 | What We Measured | 1961 | 2022 | Change |
 |-----------------|------|------|--------|
 | CO₂ in the atmosphere | 318 ppm | 419 ppm | **+32%** |
-| Global temperature anomaly | 0.16°C | 1.38°C | **+1.22°C** |
+| Global temperature anomaly | 0.29°F | 2.48°F | **+2.20°F** |
 
 > **What is "ppm"?** Parts per million—imagine one million marbles where 419 are red (CO₂) and the rest are other colors (other atmospheric gases).
 
-> **What is a "temperature anomaly"?** The difference from a historical average. A value of +1.38°C means the planet is 1.38°C warmer than the baseline period.
+> **What is a "temperature anomaly"?** The difference from a historical average. A value of +2.48°F means the planet is 2.48°F warmer than the baseline period.
 
 ### 3. The Warming is Accelerating
 
 Our decade-by-decade analysis shows that both CO₂ levels and temperatures have increased faster in recent decades compared to earlier ones:
 
-- **1960s average temperature anomaly:** Near 0°C
-- **2020s average temperature anomaly:** Over 1.2°C
+- **1960s average temperature anomaly:** Near 32°F (0°F anomaly)
+- **2020s average temperature anomaly:** Over 2.1°F
 
 The rate of change isn't just continuing—it's speeding up.
 
@@ -68,10 +68,10 @@ Using our statistical model, we predicted what might happen under different scen
 
 | Scenario | Predicted Temperature Effect |
 |----------|------------------------------|
-| **Reduce CO₂ by 10%** | Temperature anomaly drops to ~0.79°C |
-| **Reduce CO₂ by 20%** | Temperature anomaly drops to ~0.12°C |
-| **Increase CO₂ by 10%** | Temperature anomaly rises to ~2.12°C |
-| **Increase CO₂ by 20%** | Temperature anomaly rises to ~2.79°C |
+| **Reduce CO₂ by 10%** | Temperature anomaly drops to ~1.42°F |
+| **Reduce CO₂ by 20%** | Temperature anomaly drops to ~0.22°F |
+| **Increase CO₂ by 10%** | Temperature anomaly rises to ~3.82°F |
+| **Increase CO₂ by 20%** | Temperature anomaly rises to ~5.02°F |
 
 **Takeaway:** Even modest reductions in CO₂ could meaningfully reduce warming, while continued increases could push temperatures significantly higher.
 
@@ -102,7 +102,7 @@ Using our statistical model, we predicted what might happen under different scen
 |----------|--------|
 | Are CO₂ and temperature related? | Yes, with 95.5% correlation |
 | How much has CO₂ increased? | 32% since 1961 |
-| How much has temperature risen? | 1.22°C since 1961 |
+| How much has temperature risen? | 2.20°F since 1961 |
 | Can we predict temperature from CO₂? | Yes, with 91% accuracy |
 | Would reducing CO₂ help? | Yes, the model shows meaningful impact |
 
