@@ -199,7 +199,7 @@
                         </div>
                         <div class="mt-8">
                             <span class="text-6xl font-black text-white tracking-tighter">1.42°F</span>
-                            <p class="text-obsidian-accent font-bold mt-2 uppercase tracking-widest text-xs tracking-widest underline decoration-2 underline-offset-8">Achievable target</p>
+                            <p class="text-obsidian-accent font-bold mt-2 uppercase tracking-widest text-xs underline decoration-2 underline-offset-8">Achievable target</p>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="mt-8">
                             <span class="text-6xl font-black text-white tracking-tighter italic">0.22°F</span>
-                            <p class="text-green-500 font-bold mt-2 uppercase tracking-widest text-xs tracking-widest underline decoration-2 underline-offset-8">Pre-Industrial stability</p>
+                            <p class="text-green-500 font-bold mt-2 uppercase tracking-widest text-xs underline decoration-2 underline-offset-8">Pre-Industrial stability</p>
                         </div>
                     </div>
                 </div>
@@ -320,11 +320,11 @@
         lucide.createIcons();
 
         // Data for charts
-        const climateData = [{"year": 1961, "co2": 317.64, "temp": 0.38}, {"year": 1962, "co2": 318.45, "temp": 0.068}, {"year": 1963, "co2": 318.99, "temp": 0.302}, {"year": 1964, "co2": 319.62, "temp": -0.443}, {"year": 1965, "co2": 320.04, "temp": -0.401}, {"year": 1966, "co2": 321.37, "temp": 0.362}, {"year": 1967, "co2": 322.18, "temp": -0.211}, {"year": 1968, "co2": 323.05, "temp": -0.227}, {"year": 1969, "co2": 324.62, "temp": -0.166}, {"year": 1970, "co2": 325.68, "temp": 0.27}, {"year": 1971, "co2": 326.32, "temp": -0.167}, {"year": 1972, "co2": 327.46, "temp": -0.358}, {"year": 1973, "co2": 329.68, "temp": 0.484}, {"year": 1974, "co2": 330.19, "temp": -0.326}, {"year": 1975, "co2": 331.13, "temp": 0.158}, {"year": 1976, "co2": 332.03, "temp": -0.565}, {"year": 1977, "co2": 333.84, "temp": 0.484}, {"year": 1978, "co2": 335.42, "temp": 0.002}, {"year": 1979, "co2": 336.83, "temp": 0.407}, {"year": 1980, "co2": 338.76, "temp": 0.598}, {"year": 1981, "co2": 340.12, "temp": 0.797}, {"year": 1982, "co2": 341.48, "temp": 0.155}, {"year": 1983, "co2": 343.15, "temp": 0.828}, {"year": 1984, "co2": 344.87, "temp": 0.229}, {"year": 1985, "co2": 346.35, "temp": -0.056}, {"year": 1986, "co2": 347.61, "temp": 0.436}, {"year": 1987, "co2": 349.31, "temp": 0.725}, {"year": 1988, "co2": 351.69, "temp": 1.004}, {"year": 1989, "co2": 353.2, "temp": 0.596}, {"year": 1990, "co2": 354.45, "temp": 1.15}, {"year": 1991, "co2": 355.7, "temp": 0.842}, {"year": 1992, "co2": 356.55, "temp": 0.331}, {"year": 1993, "co2": 357.21, "temp": 0.626}, {"year": 1994, "co2": 358.96, "temp": 0.913}, {"year": 1995, "co2": 360.97, "temp": 1.503}, {"year": 1996, "co2": 362.74, "temp": 0.639}, {"year": 1997, "co2": 363.88, "temp": 1.181}, {"year": 1998, "co2": 366.84, "temp": 1.787}, {"year": 1999, "co2": 368.54, "temp": 1.409}, {"year": 2000, "co2": 369.71, "temp": 1.31}, {"year": 2001, "co2": 371.32, "temp": 1.501}, {"year": 2002, "co2": 373.45, "temp": 1.838}, {"year": 2003, "co2": 375.98, "temp": 1.607}, {"year": 2004, "co2": 377.7, "temp": 1.643}, {"year": 2005, "co2": 379.98, "temp": 1.971}, {"year": 2006, "co2": 382.09, "temp": 1.796}, {"year": 2007, "co2": 384.03, "temp": 2.151}, {"year": 2008, "co2": 385.83, "temp": 1.683}, {"year": 2009, "co2": 387.64, "temp": 1.723}, {"year": 2010, "co2": 390.1, "temp": 2.194}, {"year": 2011, "co2": 391.85, "temp": 1.658}, {"year": 2012, "co2": 394.06, "temp": 1.933}, {"year": 2013, "co2": 396.74, "temp": 1.829}, {"year": 2014, "co2": 398.81, "temp": 1.895}, {"year": 2015, "co2": 401.01, "temp": 2.542}, {"year": 2016, "co2": 404.41, "temp": 2.988}, {"year": 2017, "co2": 406.76, "temp": 2.572}, {"year": 2018, "co2": 408.71, "temp": 2.322}, {"year": 2019, "co2": 411.65, "temp": 2.599}, {"year": 2020, "co2": 414.21, "temp": 3.08}, {"year": 2021, "co2": 416.41, "temp": 2.605}, {"year": 2022, "co2": 418.53, "temp": 2.509}];
+        const climateData = [{"year": 1961, "co2": 317.64, "temp": 0.211}, {"year": 1962, "co2": 318.45, "temp": 0.038}, {"year": 1963, "co2": 318.99, "temp": 0.168}, {"year": 1964, "co2": 319.62, "temp": -0.246}, {"year": 1965, "co2": 320.04, "temp": -0.223}, {"year": 1966, "co2": 321.37, "temp": 0.201}, {"year": 1967, "co2": 322.18, "temp": -0.117}, {"year": 1968, "co2": 323.05, "temp": -0.126}, {"year": 1969, "co2": 324.62, "temp": -0.092}, {"year": 1970, "co2": 325.68, "temp": 0.15}, {"year": 1971, "co2": 326.32, "temp": -0.093}, {"year": 1972, "co2": 327.46, "temp": -0.199}, {"year": 1973, "co2": 329.68, "temp": 0.269}, {"year": 1974, "co2": 330.19, "temp": -0.181}, {"year": 1975, "co2": 331.13, "temp": 0.088}, {"year": 1976, "co2": 332.03, "temp": -0.314}, {"year": 1977, "co2": 333.84, "temp": 0.269}, {"year": 1978, "co2": 335.42, "temp": 0.001}, {"year": 1979, "co2": 336.83, "temp": 0.226}, {"year": 1980, "co2": 338.76, "temp": 0.332}, {"year": 1981, "co2": 340.12, "temp": 0.443}, {"year": 1982, "co2": 341.48, "temp": 0.086}, {"year": 1983, "co2": 343.15, "temp": 0.46}, {"year": 1984, "co2": 344.87, "temp": 0.127}, {"year": 1985, "co2": 346.35, "temp": -0.031}, {"year": 1986, "co2": 347.61, "temp": 0.242}, {"year": 1987, "co2": 349.31, "temp": 0.403}, {"year": 1988, "co2": 351.69, "temp": 0.558}, {"year": 1989, "co2": 353.2, "temp": 0.331}, {"year": 1990, "co2": 354.45, "temp": 0.639}, {"year": 1991, "co2": 355.7, "temp": 0.468}, {"year": 1992, "co2": 356.55, "temp": 0.184}, {"year": 1993, "co2": 357.21, "temp": 0.348}, {"year": 1994, "co2": 358.96, "temp": 0.507}, {"year": 1995, "co2": 360.97, "temp": 0.835}, {"year": 1996, "co2": 362.74, "temp": 0.355}, {"year": 1997, "co2": 363.88, "temp": 0.656}, {"year": 1998, "co2": 366.84, "temp": 0.993}, {"year": 1999, "co2": 368.54, "temp": 0.783}, {"year": 2000, "co2": 369.71, "temp": 0.728}, {"year": 2001, "co2": 371.32, "temp": 0.834}, {"year": 2002, "co2": 373.45, "temp": 1.021}, {"year": 2003, "co2": 375.98, "temp": 0.893}, {"year": 2004, "co2": 377.7, "temp": 0.913}, {"year": 2005, "co2": 379.98, "temp": 1.095}, {"year": 2006, "co2": 382.09, "temp": 0.998}, {"year": 2007, "co2": 384.03, "temp": 1.195}, {"year": 2008, "co2": 385.83, "temp": 0.935}, {"year": 2009, "co2": 387.64, "temp": 0.957}, {"year": 2010, "co2": 390.1, "temp": 1.219}, {"year": 2011, "co2": 391.85, "temp": 0.921}, {"year": 2012, "co2": 394.06, "temp": 1.074}, {"year": 2013, "co2": 396.74, "temp": 1.016}, {"year": 2014, "co2": 398.81, "temp": 1.053}, {"year": 2015, "co2": 401.01, "temp": 1.412}, {"year": 2016, "co2": 404.41, "temp": 1.66}, {"year": 2017, "co2": 406.76, "temp": 1.429}, {"year": 2018, "co2": 408.71, "temp": 1.29}, {"year": 2019, "co2": 411.65, "temp": 1.444}, {"year": 2020, "co2": 414.21, "temp": 1.711}, {"year": 2021, "co2": 416.41, "temp": 1.447}, {"year": 2022, "co2": 418.53, "temp": 1.394}];
 
         const years = climateData.map(d => d.year);
         const co2 = climateData.map(d => d.co2);
-        const temp = climateData.map(d => d.temp);
+        const temp = climateData.map(d => +(d.temp * 1.8).toFixed(3));
 
         // Chart.js Default Config
         Chart.defaults.color = '#5E4D3D';
@@ -392,7 +392,7 @@
             data: {
                 datasets: [{
                     label: 'Correlation',
-                    data: climateData.map(d => ({ x: d.co2, y: d.temp })),
+                    data: climateData.map(d => ({ x: d.co2, y: +(d.temp * 1.8).toFixed(3) })),
                     backgroundColor: '#A4503D',
                     pointRadius: 4,
                     pointHoverRadius: 8
